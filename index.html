@@ -7,48 +7,76 @@
     <title>Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'common-color': '#1DD100',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
-    <header>
+    <header class="mx-32">
         <!-- navigation bar -->
-        <nav>
+        <nav class="mb-7 mt-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-raleway text-lg">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-raleway text-lg">
+                    <a class="font-raleway font-extrabold text-4xl text-black">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-raleway text-lg">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                     </ul>
-                  </div>
-                  <a class="font-raleway font-extrabold text-4xl text-black">P-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 font-raleway text-lg">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
                 </div>
                 <div class="navbar-end">
-                  <div>
-                    <a class="btn rounded-xl border-lime-400 bg-lime-200 font-raleway text-xl font-bold text-[#1DD100] px-7  text-center">Bus
-                    <img src="images/bus-icon.png" alt="">
-                    </a>
-                  </div>
+                    <div>
+                        <a
+                            class="btn rounded-xl border-lime-400 bg-lime-200 font-raleway text-xl font-bold text-common-color px-7  text-center">Bus
+                            <img src="images/bus-icon.png" alt="">
+                        </a>
+                    </div>
                 </div>
-              </div>
+            </div>
         </nav>
         <!-- banner -->
-        
+        <div class=" min-h-screen rounded-3xl bg-[url(images/banner.png)] bg-no-repeat bg-cover">
+            <div class=" text-center">
+
+                <h1 class="text-6xl font-extrabold font-raleway pt-16 text-white">End-to-End Travel with <br><span
+                        class="mt-2 mb-0 text-common-color">P Paribahan</span> </h1>
+                <p class="mt-6 px-52 font-inter text-white">Yes, you can run unit tests and view the results directly within
+                    the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn rounded-xl bg-common-color mt-6 border-0 px-5">Buy Tickets</button>
+
+            </div>
+        </div>
+
     </header>
-    
+
     <main>
 
     </main>
