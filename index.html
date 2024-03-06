@@ -177,58 +177,91 @@
               </div>
          </div>
          <!-- ticket section -->
-         <div class="mt-6 mx-28 bg-white rounded-3xl px-8 pt-8">
-            <!-- left -->
-            <div>
-              <h1 class="font-raleway font-semibold text-2xl border-b border-dashed pb-6">Select Your Seat</h1>
-              <div class="flex justify-between border-b border-dashed mt-6 pb-4 ">
-                <div class="flex">
-                    <img src="images/seat-gray.png" alt="">
-                    <p>Available</p>
-                  </div>
-                  <div class="flex text-common-color">
-                    <img src="images/seat-green.png" alt="">
-                    <p>Selected</p>
-                  </div>
-              </div>
-              <!-- seats -->
-             <div>
-                <div class="grid grid-cols-4 mt-6">
-                    <h1>A</h1>
-                    <div class="flex gap-16">
-                        <div class="flex gap-8">
-                            <button class="btn bg-gray-type rounded-xl py-4 px-12">A1</button>
-                            <button class="btn bg-gray-type rounded-xl py-4 px-12">A2</button>
-                          </div>
-                          <div class="flex gap-8">
-                            <button class="btn bg-gray-type rounded-xl py-4 px-12">A3</button>
-                            <button class="btn bg-gray-type rounded-xl py-4 px-12">A4</button>
-                          </div>
-                    </div>
-                 </div>
-                     <div class="grid grid-cols-4 mt-6">
-                        <h1>B</h1>
-                        <div class="flex gap-16">
-                            <div class="flex gap-8">
-                                <button class="btn bg-gray-type rounded-xl py-4 px-12">B1</button>
-                               <button class="btn bg-gray-type rounded-xl py-4 px-12">B2</button>
-                             </div>
-                             <div class="flex gap-8">
-                               <button class="btn bg-gray-type rounded-xl py-4 px-12">B3</button>
-                               <button class="btn bg-gray-type rounded-xl py-4 px-12">B4</button>
-                             </div>
+            <div class="mt-6 mx-28 bg-white rounded-3xl px-8 pt-8">
+               <div class="flex gap-16 flex-1 justify-between">
+                 <!-- left -->
+                 <div class="border-r-2 border-dashed px-8 pb-8">
+                    <h1 class="font-raleway font-semibold text-2xl border-b border-dashed pb-6">Select Your Seat</h1>
+                    <div class="flex justify-between border-b border-dashed mt-6 pb-4 ">
+                      <div class="flex">
+                          <img src="images/seat-gray.png" alt="">
+                          <p>Available</p>
                         </div>
-                     </div>
-             </div>
-            <!-- right -->
-            <div>
-
-            </div>
-         </div>
-        </div> 
+                        <div class="flex text-common-color">
+                          <img src="images/seat-green.png" alt="">
+                          <p>Selected</p>
+                        </div>
+                    </div>
+                    <!-- seats -->
+                   <div>
+                      <div class="grid grid-cols-4 mt-6">
+                          <h1>A</h1>
+                          <div class="flex justify-between gap-6 ">
+                              <div class="flex justify-between gap-2">
+                                  <button class="btn bg-gray-type rounded-xl py-4">A1</button>
+                                  <button class="btn bg-gray-type rounded-xl py-4 ">A2</button>
+                                </div>
+                                <div class="flex justify-between gap-2">
+                                  <button class="btn bg-gray-type rounded-xl py-4">A3</button>
+                                  <button class="btn bg-gray-type rounded-xl py-4">A4</button>
+                                </div>
+                          </div>
+                       </div>
+                           <div class="grid grid-cols-4 mt-6">
+                              <h1>B</h1>
+                              <div class="flex justify-between gap-6">
+                                  <div class="flex justify-between gap-2">
+                                      <button class="btn bg-gray-type rounded-xl py-4">B1</button>
+                                     <button class="btn bg-gray-type rounded-xl py-4 ">B2</button>
+                                   </div>
+                                   <div class="flex justify-between gap-2">
+                                     <button class="btn bg-gray-type rounded-xl py-4">B3</button>
+                                     <button class="btn bg-gray-type rounded-xl py-4">B4</button>
+                                   </div>
+                              </div>
+                           </div>
+                   </div>
+                 </div>
+                <!-- right -->
+                <div>
+                    <h1 class="font-raleway font-semibold text-2xl border-b border-dashed pb-6">Select Your Seat</h1>
+                    <div class="bg-gray-type rounded-xl mt-6">
+                        <div class="p-8">
+                            <div class="flex justify-between border-b border-dashed pb-3">
+                                <p class="font-inter font-medium">Seat <span class="bg-common-color text-white font-bold py-1 px-2 rounded-xl text-xs">2</span></p>
+                                <p class="font-inter font-medium">Class</p>
+                                <p class="font-inter font-medium">Price</p>
+                            </div>
+                            <div class="flex justify-between font-inter text-text-color my-3">
+                                <p class="">C2</p>
+                                <p class="">Economy</p>
+                                <p class="">550</p>
+                            </div>
+                            <hr>
+                            <div class="flex justify-between font-inter font-medium my-3">
+                                <h1>Total Price</h1>
+                                <h1>BDT <span>1100</span> </h1>
+                            </div>
+                            <div class="relative">
+                                <input class="py-5 pl-6 pr-44 rounded-xl" type="text" placeholder="Have any coupon?">
+                                <button class="btn absolute rounded-lg bg-common-color py-2 px-5 text-white top-2 -ml-24">Apply</button>
+                            </div>
+                            <div class="flex justify-between font-inter font-medium mt-3">
+                                <h1>Grand Total</h1>
+                                <h1>BDT <span>1100</span> </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2 pb-3">
+                        <button class="btn rounded-2xl bg-common-color text-white font-raleway font-extrabold text-center text-xl w-full  px-7">Next</button>
+                    </div>
+                </div>
+               </div>
+            </div> 
      </section>
    
     </main>
+    
     <footer>
 
     </footer>
