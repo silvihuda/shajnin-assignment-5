@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <header class="mx-32">
+    <header id="header" class="mx-32">
         <!-- navigation bar -->
         <nav class="mb-7 mt-12">
             <div class="navbar bg-base-100">
@@ -85,7 +85,7 @@
 
     </header>
 
-    <main>
+    <main id="main" class="">
         <!-- coupon section -->
         <div class="mx-32">
             <div class="mt-24 ">
@@ -103,7 +103,7 @@
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="font-raleway  py-12 pl-6 pr-12 ">
-                            <h1 class="text-3xl font-bold">NEW<span class="text-2xl">15</span></h1>
+                            <h1  class="text-3xl font-bold">NEW<span class="text-2xl">15</span></h1>
                             <h4 class="text-xl font-medium text-[#03071266]">Coupon Code</h4>
                         </div>
 
@@ -151,7 +151,7 @@
                             <div class="mb-8">
                                 <button class="btn bg-lime-200 text-common-color">
                                     <img src="images/seat-green.png" alt="">
-                                    <span>40</span>Seats left</button>
+                                    <span id="seats-left">8</span>Seats left</button>
                             </div>
                         </div>
                         <!-- info details -->
@@ -181,7 +181,7 @@
                     <!-- taka side -->
                     <div class="px-14">
                         <img class="pt-28 mb-0" src="images/fare.png" alt="">
-                        <p class="font-raleway font-bold mt-5">550 Taka</p>
+                        <p class="font-raleway font-bold mt-5"><span id="seat-fare">550</span> Taka</p>
                         <p class="font-raleway pb-28">Per Seat</p>
                     </div>
                 </div>
@@ -208,12 +208,12 @@
                                     <h1>A</h1>
                                     <div class="flex justify-between gap-6 ">
                                         <div class="flex justify-between gap-2">
-                                            <button class="btn bg-gray-type rounded-xl py-4">A1</button>
-                                            <button class="btn bg-gray-type rounded-xl py-4 ">A2</button>
+                                            <button class="btn rounded-xl py-4 selected-btn ">A1</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">A2</button>
                                         </div>
                                         <div class="flex justify-between gap-2">
-                                            <button class="btn bg-gray-type rounded-xl py-4">A3</button>
-                                            <button class="btn bg-gray-type rounded-xl py-4">A4</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">A3</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">A4</button>
                                         </div>
                                     </div>
                                 </div>
@@ -221,12 +221,12 @@
                                     <h1>B</h1>
                                     <div class="flex justify-between gap-6">
                                         <div class="flex justify-between gap-2">
-                                            <button class="btn bg-gray-type rounded-xl py-4">B1</button>
-                                            <button class="btn bg-gray-type rounded-xl py-4 ">B2</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">B1</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">B2</button>
                                         </div>
                                         <div class="flex justify-between gap-2">
-                                            <button class="btn bg-gray-type rounded-xl py-4">B3</button>
-                                            <button class="btn bg-gray-type rounded-xl py-4">B4</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">B3</button>
+                                            <button class="btn bg-gray-type rounded-xl py-4 selected-btn">B4</button>
                                         </div>
                                     </div>
                                 </div>
@@ -239,36 +239,34 @@
                             <div class="bg-gray-type rounded-xl mt-6">
                                 <div class="p-8">
                                     <div class="flex justify-between border-b border-dashed pb-3">
-                                        <p class="font-inter font-medium">Seat <span
-                                                class="bg-common-color text-white font-bold py-1 px-2 rounded-xl text-xs">2</span>
+                                        <p class="font-inter font-medium">Seat <span id="selected-seat"
+                                                class="bg-common-color text-white font-bold py-1 px-2 rounded-xl text-xs">0</span>
                                         </p>
                                         <p class="font-inter font-medium">Class</p>
                                         <p class="font-inter font-medium">Price</p>
                                     </div>
-                                    <div class="flex justify-between font-inter text-text-color my-3">
-                                        <p class="">C2</p>
-                                        <p class="">Economy</p>
-                                        <p class="">550</p>
-                                    </div>
+                                    <div id="append-container" class="font-inter text-text-color my-3">
+                                        
+                                    </div> 
                                     <hr>
                                     <div class="flex justify-between font-inter font-medium my-3">
                                         <h1>Total Price</h1>
-                                        <h1>BDT <span>1100</span> </h1>
+                                        <h1>BDT <span id="total-price">0</span> </h1>
                                     </div>
-                                    <div class="relative">
-                                        <input class="py-5 pl-6 pr-44 rounded-xl" type="text"
+                                    <div id="coupon-checker" class="relative">
+                                        <input id="input-field" class="py-5 pl-6 pr-44 rounded-xl" type="text"
                                             placeholder="Have any coupon?">
-                                        <button
+                                        <button id="apply-btn" onclick="grandPrice('btn')"
                                             class="btn absolute rounded-lg bg-common-color py-2 px-5 text-white top-2 -ml-24">Apply</button>
                                     </div>
                                     <div class="flex justify-between font-inter font-medium mt-3">
                                         <h1>Grand Total</h1>
-                                        <h1>BDT <span>1100</span> </h1>
+                                        <h1>BDT <span id="grand-total">0</span> </h1>
                                     </div>
                                 </div>
                             </div>
                             <div class="mt-2 pb-3">
-                                <button
+                                <button id="next-btn"
                                     class="btn rounded-2xl bg-common-color text-white font-raleway font-extrabold text-center text-xl w-full  px-7">Next</button>
                             </div>
                         </div>
@@ -278,7 +276,7 @@
 
     </main>
     <!-- modal -->
-    <div class="bg-gray-type">
+    <div id="modal" class="bg-gray-type hidden">
         <div class="border-2 border-dashed bg-white mx-28 my-20 flex items-center justify-center ">
             <div>
                 <img class="px-80 mt-10 mb-7" src="images/success.png" alt="">
@@ -294,9 +292,8 @@
         </div>
     </div>
 
-    <footer>
-
-    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/reuse.js"></script>
 </body>
 
 </html>
